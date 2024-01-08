@@ -1,0 +1,153 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+.Portfolio{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+
+}
+.navlist{
+    display: flex;
+    gap: 1.5rem;
+    height: 20vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+}
+.navlist li{
+    list-style: none;
+
+}
+.navlist li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: aliceblue;
+
+}
+.left-side .right-side {
+    height: 100vh;
+    display: flex;
+align-items: center;
+}
+.left-side {
+    background: black;
+    width: 70%;
+padding-left: 4rem;
+display: flex;
+align-items: center;
+
+}
+.right-side {
+ background: linear-gradient(-45deg,#5db9ee,black 70%);
+ width: 30%;
+ align-items: center;
+
+
+
+}
+.icons {
+ color: #bbb;
+ display: flex;
+ flex-direction: column;
+ font-size: 1.5rem;
+ justify-content: center;
+ align-items: center;
+ gap: 1.5rem;
+}
+
+.content {
+    margin-left: 4rem;
+
+}
+.content .intro {
+    font-size: 1.5rem;
+    color: floralwhite;
+}
+.content h1 {
+    color: #5db9ee;
+    font-size: 3rem;
+}
+.content .intro span {
+    color: #5db9ee;
+}
+.content .details {
+color: whitesmoke;
+font-size: 1rem;    
+margin: 1.1rem 0 3rem 0;
+line-height: 1.8rem;
+
+}
+.btn button {
+    border: .1rem solid #5db9ee;
+    font-size: 1.1rem ;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+button:nth-child(1){
+    background: #5db9ee;
+}
+button:nth-child(2){
+    background: transparent;
+    color: #5db9ee;
+    margin-left: 2rem;
+
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color:#5db9ee;
+}
+button:nth-child(2):hover{
+    background: #5db9ee;
+    color: black;
+}
+.icons .fa-brands:hover {
+       cursor: pointer;
+    background: linear-gradient(#fff,#5db9ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+
+
+}
+.circle:nth-last-child(2) {
+background: linear-gradient(90deg, transparent -50%,black -50%);
+width: 38rem;
+
+}
+.circle:nth-last-child(1){
+background: white;
+width: 30rem;
+background-image: url("image/background.jpg");
+background-size: 100%;
+background-repeat: no-repeat;
+box-shadow: 0 0 1rem white,
+inset 0 0 1rem white,
+0 0 2rem #5db9ee,
+inset 0 0 2rem #5db9ee
+;
+}
+.navlist li a:hover{
+    color: #5db9ee;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
